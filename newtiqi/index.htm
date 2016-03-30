@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/tim-style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+
+    <title>TiQi - Login</title>
+    
+</head>
+<body>
+    <div id='background'>
+        <div id='cssmenu'>
+            <ul>
+               <li><a href='#'>About TiQi</a></li>
+               <li class='active'><a href='#'>Try TiQi</a></li>
+               <li><a href='team.htm'>Meet the Team</a></li>
+               <li><a href='#'>Citations</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="centerScreen">
+        <div id="login">
+            <h2>Please log in:</h2>
+            <form action="tim.htm" method="post">
+                <select autofocus >
+                    <option value="" disabled selected>Select your project</option>
+                    <option value="1">Project 1</option>
+                    <option value="2">Project 2</option>
+                    <option value="3">Project 3</option>
+                </select>
+
+                <input type="text" name="username" id="username" placeholder="Username" />
+                <input type="password" name="password" id="password" placeholder="Password" />
+                <div class="buttons">
+                        <input type="submit" class="button" id="submitbtn" value="Log in" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

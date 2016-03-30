@@ -1,0 +1,41 @@
+{
+"TIMlayout": [
+{
+"id": "hazard",
+"position": {"x": 54.1665,"y": 47.91675},
+"size": {"width":108.33,"height":95.835},
+"name": "`hazard`",
+"attributes": ["`ID`","`Hazard`","`Classification`","`Probability`"],
+"functions": [ ]
+},
+{
+"id": "fault",
+"position": {"x": 211.455,"y": 47.91675},
+"size": {"width":131.25,"height":80.20499},
+"name": "`fault`",
+"attributes": ["`ID`","`ContributingFault`","`Severity`"],
+"functions": [ ]
+},
+{
+"id": "code",
+"position": {"x": 565.1025,"y": 47.91675},
+"size": {"width":146.8725,"height":64.58324},
+"name": "`code`",
+"attributes": [],
+"functions": [ "`code`.`Package`=P2"]
+},
+{
+"id": "system_requirements",
+"position": {"x": 384.375,"y": 47.91675},
+"size": {"width":139.5825,"height":48.9585},
+"name": "`system_requirements`",
+"attributes": [],
+"functions": [ ]
+}
+],
+"links": [{"source" : "hazard","target" : "fault"},{"source" : "fault","target" : "system_requirements"},{"source" : "system_requirements","target" : "code"}],
+"SQL": [ {"NQL":"show me hazard elements test",
+"SQL":"SELECT DISTINCT `hazard`.`ID`, `hazard`.`Hazard`, `hazard`.`Classification`, `hazard`.`Probability`, `fault`.`ID`, `fault`.`ContributingFault`, `fault`.`Severity` FROM `hazard`, `fault`, `code`, `tm_hazardfault`, `tm_faultsrs`, `system_requirements`, `tm_srscode` WHERE (1 AND `code`.`Package`=\"P2\") AND (`tm_hazardfault`.`HazardID` = `hazard`.`ID` AND `tm_hazardfault`.`FaultID` = `fault`.`ID` AND `tm_faultsrs`.`FaultID` = `fault`.`ID` AND `tm_faultsrs`.`SrsID` = `system-requirements`.`ID` AND `tm_srscode`.`SrsID` = `system-requirements`.`ID` AND `tm_srscode`.`CodeID` = `code`.`ID`)",
+"attributes" :["`ID`","`Hazard`","`Classification`","`Probability`","`ID`","`ContributingFault`","`Severity`" ], 
+"content": []
+ } ] }

@@ -1,0 +1,53 @@
+body {
+	font: 12px "Trebuchet MS", Helvetica, sans-serif;
+	background: url("../images/fundo.jpg") fixed no-repeat;
+	color: #FFFFFF;
+}
+
+#creditos{
+	font: 14px "Trebuchet MS", Helvetica, sans-serif bold;
+}
+
+#topo {	
+	margin-top: 2%;
+	text-align: center;
+	display: block;
+	height: 120px;
+}
+	
+#navegacao {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 2% 0 2% 5%; /*superior, direita, inferior, esquerda*/
+	text-align: left;
+	display: block;
+}
+
+#rodape {	
+	color: #000000;
+	top: 570;
+	position: fixed;
+	width: auto;
+	margin: 2% 0 0 5%; /*superior, direita, inferior, esquerda*/
+	text-align: left;
+	display: block;
+	height: 48px;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+#principal {
+	height: 350px;
+	text-align: center;
+	display: block;
+	vertical-align: middle;
+}
+
+.botao{
+	margin: 1% 0 1% 0; /*superior, direita, inferior, esquerda*/
+	height: 64px;
+}

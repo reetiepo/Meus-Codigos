@@ -1,0 +1,25 @@
+
+
+#login {
+    margin:                 auto;
+    display:                inline-block; 
+    text-align:             center;
+    background-color:       #cedfdb;
+    border:                 thin solid black;
+    border-radius:          5px;
+    padding:                10px;
+}
+
+select, input[type=text], input[type=password] {
+    width:                  200px;
+    display:                block;
+    margin:                 8px;
+    font-family:            "Tahoma", "Arial", "sans-serif";
+    font-size:              14px;
+}
+
+#centerScreen {
+    width:                  100%;
+    text-align:             center;
+    margin-top:             10%;
+}

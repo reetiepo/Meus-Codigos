@@ -1,0 +1,23 @@
+body {
+	background-color: black;
+	text-align: center;
+}
+
+#logoMenu {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#logoMenu img {
+	width: 320px;
+	height: 80px;
+}
+
+.fotosHeader {
+	width: 170px;
+	height: 300px;
+    margin: 50px;
+}
+
+.videoHeader {
+}

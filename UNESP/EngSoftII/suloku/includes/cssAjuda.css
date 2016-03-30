@@ -1,0 +1,41 @@
+#ajuda{
+	display: inline;
+}
+
+#imagens {
+	display: inline-block;
+	border: 2px solid #FFF;
+	border-radius: 5.5em;
+	margin-right: 1%;
+	vertical-align: top;
+}
+
+#imagens img{
+	width: 300px;
+}
+
+#instrucoes{
+	display: inline-block;
+	text-align: left;
+	margin-left: 1%;
+	font-size: 14px;
+	font-weight: bold;
+	width: 40%;
+	vertical-align: top;
+}
+
+#instrucoes a {
+	color: #FFFFFF;
+	text-decoration: underline;
+	display: block;
+}
+
+.sub{
+	font-weight: normal;
+	font-size: 12px;
+	background-color: #113561;
+	border: 1px solid #FFFFFF;
+	border-radius: 0.5em;
+	margin-top: 3px;
+	padding: 0 3px 0 3px; /*superior, direita, inferior, esquerda*/
+}

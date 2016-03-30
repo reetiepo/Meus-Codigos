@@ -1,0 +1,219 @@
+{
+	"TIMlayout": [
+		{
+			"id": "hazards",
+			"position": {"x": 14, "y": 49},
+			"size": {"width": 130, "height": 100},
+			"name": "Hazards",
+			"attributes": ["ID", "Description", "RiskLevel"],
+			"functions": ["ƒ Topics"],
+            "content": [ 
+                { 
+                    "ID": "H1", 
+                    "Description": "Prolonged exposure of infant to unsafe heat or cod...", 
+                    "RiskLevel": "Low"
+                }, 
+                { 
+                    "ID": "H2", 
+                    "Description": "Isolette system falls over", 
+                    "RiskLevel": "Medium"
+                }, 
+                { 
+                    "ID": "H3", 
+                    "Description": "Testing hazard", 
+                    "RiskLevel": "Low"
+                }  
+            ]
+		},
+		{
+			"id": "faults",
+			"position": { "x": 215  , "y": 38 },
+            "size": { "width": 130, "height": 120 },
+            "name": "Faults",
+            "attributes": ["ID", "Fault", "Likelihood", "Impact", "Mitigation"],
+            "functions": ["ƒ Trending"],
+            "content": []
+        },
+        {
+        	"id": "system_requirements",
+            "position": { "x": 215  , "y": 240 },
+            "size": { "width": 130, "height": 100 },
+            "name": "System Requirements",
+            "attributes": ["ID", "Description", "Status", "Priority"],
+            "functions": ["ƒ Topics"],
+            "content": [ 
+                { 
+                    "ID": "SR1", 
+                    "Description": "The Thermostat function shall set the value of the heat control.", 
+                    "Status": "Pending",
+                    "Priority": "High"
+                }, 
+                { 
+                    "ID": "SR2", 
+                    "Description": "The Thermostat function shall set the value of the operator feedback", 
+                    "Status": "Pending",
+                    "Priority": "Medium"
+                }, 
+                { 
+                    "ID": "SR3", 
+                    "Description": "The isolette shall include an independent Thermostat Function that maintains the current temperature within the desired temperature range inside the isolette", 
+                    "Status": "Under development",
+                    "Priority": "High"
+                }, 
+                { 
+                    "ID": "SR4", 
+                    "Description": "An independent monitor function shall activate an alarm within 5 seconds whenever the current temperatue inside the Isolette falls below or rises above the Alarm temperature range.", 
+                    "Status": "Pending",
+                    "Priority": "High"
+                }, 
+                { 
+                    "ID": "SR5", 
+                    "Description": "An alarm shall sound when the current temperature is flagged as invalid", 
+                    "Status": "On Hold",
+                    "Priority": "Medium"
+                }, 
+                { 
+                    "ID": "SR6", 
+                    "Description": "The heat control shall never run for longer than the maximum run time.", 
+                    "Status": "Pending",
+                    "Priority": "High"
+                }, 
+                { 
+                    "ID": "SR7", 
+                    "Description": "The physical mechanics of the isolette must be inspected prior to each use.", 
+                    "Status": "Process",
+                    "Priority": "Medium"
+                }, 
+                { 
+                    "ID": "SR8", 
+                    "Description": "The Thermostat must be self-tested at startup.", 
+                    "Status": "Under development",
+                    "Priority": "High"
+                }, 
+                { 
+                    "ID": "SR9", 
+                    "Description": "The Thermostat Function shall set the value of the Regulator Status.", 
+                    "Status": "On Hold",
+                    "Priority": "High"
+                }
+            ]
+        },
+		{
+			"id": "state_transiction_diag",
+            "position": { "x": 14  , "y": 300 },
+            "size": { "width": 130, "height": 90 },
+            "name": "State Transiction Diag.",
+            "attributes": ["ID", "States", "Transitions", "Model"],
+            "functions": [],
+            "content": []
+        },
+		{
+			"id": "regulary_codes",
+            "position": { "x": 14  , "y": 180 },
+            "size": { "width": 130, "height": 90 },
+            "name": "Regulary Codes",
+            "attributes": ["ID", "Regulation", "Relevance"],
+            "functions": ["ƒ Topics"],
+            "content": []
+        },
+        {
+			"id": "source_code",
+            "position": { "x": 215  , "y": 400 },
+            "size": { "width": 130, "height": 150 },
+            "name": "Source Code",
+            "attributes": ["ClassName", "Code", "CreatedBy", "CreatedOn", "LastModifiedBy", "LastModifiedOn"],
+            "functions": ["ƒ FaultLikelihood", "ƒ Topics"],
+            "content": []
+        },
+        {
+			"id": "components",
+            "position": { "x": 14  , "y": 450 },
+            "size": { "width": 130, "height": 60 },
+            "name": "Components",
+            "attributes": ["Name"],
+            "functions": ["ƒ FaultLikelihood"],
+            "content": []
+        },
+        {
+			"id": "unit_tests",
+            "position": { "x": 416  , "y": 450 },
+            "size": { "width": 130, "height": 100 },
+            "name": "Unit Tests",
+            "attributes": ["TestID", "Script", "CurrentStatus"],
+            "functions": ["ƒ Coverage"],
+            "content": []
+        },
+        {
+			"id": "work_items",
+            "position": { "x": 416  , "y": 290 },
+            "size": { "width": 130, "height": 120 },
+            "name": "Work Items",
+            "attributes": ["ID", "Description", "AssignedTo", "DateCompleted", "Comments"],
+            "functions": ["ƒ ProjectVelocity"],
+            "content": []
+        },
+        {
+			"id": "user_requirements",
+            "position": { "x": 430  , "y": 80 },
+            "size": { "width": 130, "height": 150 },
+            "name": "User Requirements",
+            "attributes": ["ID", "Requirements", "Status", "Priority", "Contributors"],
+            "functions": ["ƒ NFR Types", "ƒ Topics", "ƒ Find-the-expert", "ƒ Volatility"],
+            "content": []
+        },
+        {
+			"id": "acceptance_tests",
+            "position": { "x": 616  , "y": 60 },
+            "size": { "width": 130, "height": 100 },
+            "name": "Acceptance Tests",
+            "attributes": ["TestID", "Script", "CurrentStatus"],
+            "functions": ["ƒ Coverage"],
+            "content": []
+        },
+        { 
+			"id": "acceptance_tests_log",
+            "position": { "x": 816  , "y": 40 },
+            "size": { "width": 130, "height": 130 },
+            "name": "Acceptance Tests Log",
+            "attributes": ["TestID", "DateRun", "ByWhom", "Status", "ActionItem", "Comments"],
+            "functions": ["ƒ Productivity"],
+            "content": []
+        },
+        {
+			"id": "bug_tracker",
+            "position": { "x": 616  , "y": 280 },
+            "size": { "width": 130, "height": 140 },
+            "name": "Bug Tracker",
+            "attributes": ["ID", "Title", "ReportedOn", "FixedOn", "Symptoms", "State", "Effort"],
+            "functions": ["ƒ Find-the-expert"],
+            "content": []
+        },
+        {
+			"id": "unit_test_log",
+            "position": { "x": 616  , "y": 450 },
+            "size": { "width": 130, "height": 100 },
+            "name": "Unit Test Log",
+            "attributes": ["TestID", "DateRun", "ByWhom", "Status", "ActionItems"],
+            "functions": [],
+            "content": []
+		}
+	],
+
+	"links": [
+		{"source": "faults", "target": "hazards"},
+		{"source": "system_requirements", "target": "faults"},
+		{"source": "state_transiction_diag", "target": "system_requirements"},
+		{"source": "regulary_codes", "target": "system_requirements"},
+		{"source": "source_code", "target": "system_requirements"},
+		{"source": "unit_tests", "target": "source_code"},
+		{"source": "work_items", "target": "source_code"},
+		{"source": "work_items", "target": "system_requirements"},
+		{"source": "system_requirements", "target": "user_requirements"},
+		{"source": "user_requirements", "target": "faults"},
+		{"source": "acceptance_tests", "target": "user_requirements"},
+		{"source": "acceptance_tests_log", "target": "acceptance_tests"},
+		{"source": "source_code", "target": "components"},
+		{"source": "work_items", "target": "bug_tracker"},
+		{"source": "unit_test_log", "target": "unit_tests"}
+	]
+}

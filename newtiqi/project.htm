@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TiQi - Query Results</title>
+    <link rel="stylesheet" href="css/joint.css" />
+    <link rel="stylesheet" href="css/proj-style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="js/joint.js"></script>
+    <script type="text/javascript" src="js/joint.shapes.uml.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+    <div id='background'>
+        <div id='cssmenu'>
+            <ul>
+               <li><a href='#'>About TiQi</a></li>
+               <li class='active'><a href='index.htm'>Try TiQi</a></li>
+               <li><a href='team.htm'>Meet the Team</a></li>
+               <li><a href='#'>Citations</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+		<div id="nlq"></div>
+
+		<div class="vtmlSqlContainer">
+			<div id="vtml">
+				<div id="paper"></div>
+				<div id="zoom">
+					<img src="images/zoom_in.png" id="zoomIN" class="zoom" />
+					<img src="images/zoom_out.png" id="zoomOUT" class="zoom" /> 
+				</div>
+			</div>
+			<div class="margin"></div>
+			<div id="sql"></div>
+		</div>
+
+		<div id="table"></div>
+
+		<div id="buttons">
+			<input type="button" value="Query is Correct" class="btn" />
+			<input type="button" value="Query is Not Correct" class="btn" id="btnNotCorret"/>
+			<input type="button" value="Go back" class="btn" id="btnBack"/>
+		</div>
+
+		<div id="dialogNotCorret">
+			<input type="checkbox" name="queryErr" value="0"> At least one artifact type is wrong<br />
+			<input type="checkbox" name="queryErr" value="1"> Failed to negate something<br />
+			<input type="checkbox" name="queryErr" value="2"> Failed to aggregate something<br />
+			<input type="checkbox" name="queryErr" value="3"> Failed to filter/constrain something<br />
+			<input type="checkbox" name="queryErr" value="4"> Query includes unwanted filter<br />
+			<input type="checkbox" name="queryErr" value="5"> Query requests extra data<br />
+			<input type="checkbox" name="queryErr" value="6"> Some other error
+		</div>
+	</div>
+
+</body>
+</html>

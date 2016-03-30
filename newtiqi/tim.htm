@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/joint.css" />
+    <link rel="stylesheet" href="css/tim-style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="js/joint.js"></script>
+    <script type="text/javascript" src="js/joint.shapes.uml.js"></script>
+    <script type="text/javascript" src="js/html2canvas.js"></script>
+    <script type="text/javascript" src="js/canvas2image.js"></script>
+    <script type="text/javascript" src="js/diagram.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="js/menu.js"></script>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <title>TiQi - Query Elicitation</title>
+    
+</head>
+<body>
+    <div id='background'>
+        <div id='cssmenu'>
+            <ul>
+               <li><a href='#'>About TiQi</a></li>
+               <li class='active'><a href='index.htm'>Try TiQi</a></li>
+               <li><a href='team.htm'>Meet the Team</a></li>
+               <li><a href='#'>Citations</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="query">
+        <textarea id="texteareaQuery" placeholder="Enter your Natural Language Query" autofocus></textarea>
+        <img src="images/mic_off.png" id="mic" /><br/>
+    </div>
+    <div class="buttons">
+        <form action="project.htm" method="post">
+            <input type="button" class="button" id="examples" value="See Examples" />
+            <input type="submit" class="button" id="submitbtn" value="Submit" />
+        </form>
+    </div>
+
+    <div id="info">* Double-click entities to see some data</div>
+	<div id="paper" class="paper"/></div>
+    <div class="buttons">
+        <img src="images/zoom_in.png" id="zoomIN" class="zoom" />
+        <input type="button" class="button" id="savebtn" value="Save" />
+        <input type="button" class="button" id="exportbtn" value="Export to PNG" />
+        <img src="images/zoom_out.png" id="zoomOUT" class="zoom" /> 
+    </div>
+
+	<div id="dataDialog"></div>
+    <div id="confirmSave"></div>
+</body>
+</html>

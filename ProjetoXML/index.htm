@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RELAT&Oacute;RIOS SAPATOS MANEIROS</title>
+
+  	<link rel="stylesheet" href="js/jquery-ui.css">
+	<script src="js/jquery-1.10.2.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+
+  	<script>
+  		$(function() {
+			$("#dataInicio").datepicker().datepicker("option", "dateFormat", "dd/mm/yy");
+			$("#dataFim").datepicker().datepicker("option", "dateFormat", "dd/mm/yy");
+
+			$("#tipoRelatorio").on("change", function() {
+				var value = $(this).find(":selected")[0].value;
+				if (value == 1 || value == 2) {
+					$("#dataInicio").attr("disabled", true);
+					$("#dataFim").attr("disabled", true);
+				} else {
+					$("#dataInicio").attr("disabled", false);
+					$("#dataFim").attr("disabled", false);
+				}
+			});
+		});
+  	</script>
+</head>
+<body style="font-family: Verdana; color: #5a070c; text-align: center; font-size: 14px;">
+    <div style="font-size: 34px;"><strong>Sapatos Maneiros</strong></div>
+    www.sapatosmaneiros.com.br<br /><br />
+
+	<form id='formSapataria' method='post' action='geraXML.php'>
+		<label for='tipoRelatorio'>Relat&oacute;rio: </label>
+		<select id='tipoRelatorio' name='tipoRelatorio'>
+			<option value="1">Clientes por quantidade de pedidos</option>
+			<option value="2">Clientes por valor gasto</option>
+			<option value="3">Produtos mais vendidos</option>
+			<option value="4">Categorias mais vendidas</option>
+			<option value="5">Tamanho de produtos mais vendidos</option>
+			<option value="6">Cores de produtos mais vendidos</option>
+			<option value="7">Meios de pagamentos mais utilizados</option>
+		</select>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<label for='dataInicio'>Data inicial: </label>
+		<input type='text' id='dataInicio' name='dataInicio' disabled="true" />
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<label for='dataFim'>Data Final: </label>
+		<input type='text' id='dataFim' name='dataFim' disabled="true" />
+		<br /><br/>
+		<input type='submit' value='Gerar relat&oacute;rio' style="font-family: Verdana; text-align: center; font-size: 14px;" />
+	</form>
+</body>
+</hmtl>

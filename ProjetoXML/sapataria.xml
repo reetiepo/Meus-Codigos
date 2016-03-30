@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?> 
+<?xml-stylesheet href='sapataria.xsl' type='text/xsl' ?>
+<!DOCTYPE sapataria SYSTEM 'sapataria.dtd'>
+
+<sapataria>
+	<sobre>
+		<nome>Sapatos Maneiros</nome>
+		<site>www.sapatosmaneiros.com.br</site>
+	</sobre>
+	<tituloGrafico>Clientes por valor gasto</tituloGrafico>
+	<dados>
+		<titulo>Wesley Rodrigues de Lima</titulo>
+		<valor>567.20</valor>
+	</dados>
+	<dados>
+		<titulo>Samanta Melo de Oliveira</titulo>
+		<valor>245.00</valor>
+	</dados>
+	<dados>
+		<titulo>Josué da Silva</titulo>
+		<valor>139.80</valor>
+	</dados>
+</sapataria>

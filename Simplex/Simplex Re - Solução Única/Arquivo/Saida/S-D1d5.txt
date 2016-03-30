@@ -1,0 +1,39 @@
+
+Saida Arquivo/Entrada/D1d5.txt
+
+Minimizar a Perda Total
+max retalho: 0
+lalala(0)(1100)	18.00	(78)14	8.00	0	
+lalala(1)(1100)	16.00	(47)23	19.00	0	
+lalala(2)(1100)	15.00	(46)23	42.00	0	
+lalala(3)(1100)	13.00	(80)13	60.00	0	
+lalala(4)(1100)	9.00	(36)30	20.00	0	
+lalala(5)(1100)	8.00	(57)19	17.00	0	
+lalala(6)(1100)	5.00	(24)45	20.00	0	
+lalala(7)(1100)	5.00	(68)16	12.00	0	
+lalala(8)(1100)	5.00	(15)73	5.00	0	
+lalala(9)(1100)	2.00	(13)84	8.00	0	
+max retalho: 0
+lalala(6)(1100)	1.00	(36)3	992.00	0	
+lalala(7)(1100)	1.00	(24)36	236.00	0	
+lalala(8)(1100)	1.00	(13)49	463.00	0	
+lalala(9)(1100)	1.00	(15)8	980.00	0	
+max retalho: 0
+lalala(0)(1000)	1.00	(78)10	220.00	0	
+lalala(1)(1000)	1.00	(80)12	40.00	0	
+lalala(2)(1000)	1.00	(68)9	388.00	0	
+lalala(3)(1000)	1.00	(57)14	202.00	0	
+lalala(4)(1000)	1.00	(46)12	448.00	0	
+lalala(5)(1000)	1.00	(47)13	0	389	
+Sobra Total: 389.00
+Perda Total: 6344.00
+
+Total Barras Cortadas:
+Barra (1000) : 6
+Barra (1100) : 100
+Barra (62) : 0
+Barra (275) : 0
+Barra (50) : 0
+
+Retalhos Gerados:
+Retalho (389) : 1

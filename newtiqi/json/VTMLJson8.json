@@ -1,0 +1,41 @@
+{
+"TIMlayout": [
+{
+"id": "test_case",
+"position": {"x": 794.775,"y": 40.104},
+"size": {"width":89.57999,"height":80.20499},
+"name": "`test_case`",
+"attributes": ["`ID`","`TestName`","`Steps`"],
+"functions": [ ]
+},
+{
+"id": "system_requirements",
+"position": {"x": 309.375,"y": 40.104},
+"size": {"width":618.75,"height":64.58324},
+"name": "`system_requirements`",
+"attributes": [],
+"functions": [ "`system_requirements`.`Description`=Analarmshallsoundwhenthecurrenttemperatureisflaggedasinvalid"]
+},
+{
+"id": "test_case_results",
+"position": {"x": 995.85,"y": 40.104},
+"size": {"width":237.5025,"height":64.58324},
+"name": "`test_case_results`",
+"attributes": [],
+"functions": [ "`test_case_results`.`Status`=Passed"]
+},
+{
+"id": "code",
+"position": {"x": 684.375,"y": 40.104},
+"size": {"width":56.25,"height":48.9585},
+"name": "`code`",
+"attributes": [],
+"functions": [ ]
+}
+],
+"links": [{"source" : "code","target" : "test_case"},{"source" : "system_requirements","target" : "code"},{"source" : "test_case","target" : "test_case_results"}],
+"SQL": [ {"NQL":"show me hazard elements test",
+"SQL":"SELECT DISTINCT `test_case`.`ID`, `test_case`.`TestName`, `test_case`.`Steps` FROM `test_case`, `system_requirements`, `test_case_results`, `tm_codetest`, `code`, `tm_srscode`, `tm_testcaseresults` WHERE ((1 AND `system_requirements`.`Description`=\"An alarm shall sound when the current temperature is flagged as invalid\") AND `test_case_results`.`Status`=\"Passed\") AND (`tm_codetest`.`testID` = `test_case`.`ID` AND `tm_codetest`.`codeID` = `code`.`ID` AND `tm_srscode`.`CodeID`= `code`.`ID` AND `tm_srscode`.`SrsID` = `system_requirements`.`ID` AND `tm_testcaseresults`.`TestCaseID` = `test_case`.`ID` AND `tm_testcaseresults`.`TestCaseResults` = `test_case_results`.`ID`)",
+"attributes" :["`ID`","`TestName`","`Steps`" ], 
+"content": []
+ } ] }

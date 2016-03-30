@@ -1,0 +1,25 @@
+{
+"TIMlayout": [
+{
+"id": "hazard",
+"position": {"x": 54.1665,"y": 47.91675},
+"size": {"width":108.33,"height":95.835},
+"name": "`hazard`",
+"attributes": ["    `ID`","    `Hazard`","    `Classification`","    `Probability`"],
+"functions": [ ]
+},
+{
+"id": "fault",
+"position": {"x": 224.4825,"y": 47.91675},
+"size": {"width":157.29,"height":64.58324},
+"name": "`fault`",
+"attributes": [],
+"functions": [ "    `fault`.`Severity`=high"]
+}
+],
+"links": [{"source" : "hazard","target" : "fault"}],
+"SQL": [ {"NQL":"show me hazard elements test",
+"SQL":"SELECT DISTINCT `hazard`.`ID`, `hazard`.`Hazard`, `hazard`.`Classification`, `hazard`.`Probability` FROM `hazard`, `fault`, `tm_hazardfault` WHERE (1 AND `fault`.`Severity`=\"high\") AND (`tm_hazardfault`.`HazardID` = `hazard`.`ID` AND `tm_hazardfault`.`FaultID` = `fault`.`ID`)",
+"attributes" :["`ID`","`Hazard`","`Classification`","`Probability`" ], 
+"content": []
+ } ] }

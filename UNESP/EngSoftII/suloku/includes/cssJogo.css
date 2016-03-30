@@ -1,0 +1,81 @@
+#form{
+	display: inline;
+}
+
+#botoes{
+	height: 280px;
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+	margin: 2.5% 0 0 0; /*superior, direita, inferior, esquerda*/
+}
+
+#botoes input{
+	display: block;
+	margin: 10% 0 0 0; /*superior, direita, inferior, esquerda*/
+}
+
+input[type="button"], input[type="submit"]{
+	width: 90px;
+	font: 14px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#fim, #pausa{
+	width: 280px;
+	height: 280px;
+	background-color: #192b41;
+	border: 2px solid #FFFFFF;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#pausado{
+	width: 250px;
+	margin-top: 43%;
+}
+
+#parabens{
+	width: 250px;
+	margin-top: 5%;
+}
+
+#tempo{
+	font-size: 14px;
+	text-align: left;
+	margin: 0 0 160% 0;	
+}
+
+#mensagem{
+	color: red;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 1%;
+}
+
+#jogo{
+	background: url("../images/fundoSudoku.png");
+	background-color: #FFFFFF;
+	width: 281px;
+	height: 281px;
+	text-align: center;
+	display: inline-block;
+	margin: 2.5% 2% 0 0; /*superior, direita, inferior, esquerda*/
+	position: relative;
+}
+
+#jogo td input[type="text"]{
+	width: 27px;
+	height: 27px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#nome{
+	font: 14px "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}

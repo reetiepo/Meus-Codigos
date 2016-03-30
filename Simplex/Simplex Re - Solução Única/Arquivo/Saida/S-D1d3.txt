@@ -1,0 +1,39 @@
+
+Saida Arquivo/Entrada/D1d3.txt
+
+Minimizar a Perda Total
+max retalho: 0
+lalala(0)(1100)	33.00	(75)14	50.00	0	
+lalala(1)(1100)	15.00	(42)26	8.00	0	
+lalala(2)(1100)	14.00	(54)20	20.00	0	
+lalala(3)(1100)	12.00	(31)35	15.00	0	
+lalala(4)(1100)	6.00	(63)17	29.00	0	
+lalala(5)(1100)	6.00	(19)57	17.00	0	
+lalala(6)(1100)	4.00	(77)14	22.00	0	
+lalala(7)(1100)	1.00	(10)110	0.00	0	
+lalala(8)(1100)	1.00	(52)21	8.00	0	
+lalala(9)(1100)	1.00	(21)52	8.00	0	
+max retalho: 0
+lalala(3)(1100)	1.00	(54)3	938.00	0	
+lalala(4)(1100)	1.00	(42)14	512.00	0	
+lalala(5)(1100)	1.00	(31)23	387.00	0	
+lalala(6)(1100)	1.00	(19)28	568.00	0	
+lalala(7)(1100)	1.00	(21)12	848.00	0	
+lalala(8)(1100)	1.00	(10)78	320.00	0	
+lalala(9)(1100)	1.00	(77)4	792.00	0	
+max retalho: 0
+lalala(0)(1000)	1.00	(75)9	325.00	0	
+lalala(1)(1000)	1.00	(63)10	370.00	0	
+lalala(2)(1000)	1.00	(52)11	0	428	
+Sobra Total: 428.00
+Perda Total: 7670.00
+
+Total Barras Cortadas:
+Barra (1000) : 3
+Barra (1100) : 100
+Barra (127) : 0
+Barra (356) : 0
+Barra (130) : 0
+
+Retalhos Gerados:
+Retalho (428) : 1

@@ -1,0 +1,25 @@
+{
+"TIMlayout": [
+{
+"id": "system_requirements",
+"position": {"x": 127.08,"y": 40.104},
+"size": {"width":254.1675,"height":80.20499},
+"name": "`system_requirements`",
+"attributes": ["<attricon>`ID`","<attricon>`Priority`"],
+"functions": [ "<funcicon>`system_requirements`.`Priority`=High"]
+},
+{
+"id": "design",
+"position": {"x": 651.045,"y": 40.104},
+"size": {"width":718.7475,"height":64.58324},
+"name": "`design`",
+"attributes": [],
+"functions": [ "`design`.`description`!=Ifthesystemdoesnotcompleteitsinitializationwithinaspecifiedtime-outperioditentersFAILEDmode"]
+}
+],
+"links": [{"source" : "system_requirements","target" : "design"}],
+"SQL": [ {"NQL":"show me hazard elements test",
+"SQL":"SELECT DISTINCT `system_requirements`.`ID`, `system_requirements`.`Priority` FROM `system_requirements`, `design`, `tm_srsdesign` WHERE ((1 AND `system_requirements`.`Priority`=\"High\") AND `design`.`description`!=\" If the system does not complete its initialization within a specified time-outperiod it enters FAILED mode.\") AND (`tm_srsdesign`.`SrsID` = `system_requirements`.`ID` AND `tm_srsdesign`.`DesignID` = `design`.`ID`)",
+"attributes" :["`ID`","`Priority`" ], 
+"content": []
+ } ] }

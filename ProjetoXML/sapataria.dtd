@@ -1,0 +1,9 @@
+<?xml encoding="UTF-8" ?>
+<!ELEMENT sapataria (sobre, dados+) >
+<!ELEMENT sobre (nome, email) >
+<!ELEMENT dados (titulo, valor) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT valor (#PCDATA) >
+<!ELEMENT tituloGrafico (#PCDATA) >

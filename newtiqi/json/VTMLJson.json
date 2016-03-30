@@ -1,0 +1,25 @@
+{
+"TIMlayout": [
+{
+"id": "test_case",
+"position": {"x": 347.9175,"y": 40.104},
+"size": {"width":89.57999,"height":80.20499},
+"name": "`test_case`",
+"attributes": ["`ID`","`TestName`","`Steps`"],
+"functions": [ ]
+},
+{
+"id": "code",
+"position": {"x": 132.81,"y": 40.104},
+"size": {"width":265.6275,"height":80.20499},
+"name": "`code`",
+"attributes": ["`FileName`"],
+"functions": [ "`code`.`CreatedOn`>=2014-10-240:0:0","`code`.`CreatedOn`<=2014-10-2423:59:59"]
+}
+],
+"links": [{"source" : "code","target" : "test_case"}],
+"SQL": [ {"NQL":"show me hazard elements test",
+"SQL":" SELECT DISTINCT `test_case`.`ID`, `test_case`.`TestName`, `test_case`.`Steps`, `code`.`FileName` FROM `test_case`, `code`, `tm_codetest` WHERE ((1 AND `code`.`CreatedOn`>=\"2014-10-24 0:0:0\") AND `code`.`CreatedOn`<=\"2014-10-24 23:59:59\") AND (`tm_codetest`.`testID` = `test-case`.`ID` AND `tm_codetest`.`codeID` = `code`.`ID`)",
+"attributes" :["`ID`","`TestName`","`Steps`","`FileName`" ], 
+"content": []
+ } ] }

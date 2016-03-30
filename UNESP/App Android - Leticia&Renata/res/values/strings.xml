@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Leticia&amp;Renata</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="strDias" >
+        <item >Segunda-Feira</item>
+        <item >Terça-Feira</item>
+        <item >Quarta-Feira</item>
+        <item >Quinta-Feira</item>
+        <item >Sexta-Feira</item>
+        <item >Sábado</item>
+    </string-array>
+    
+    <string-array name="strHoras" >
+        <item >10:00</item>
+        <item >11:30</item>
+        <item >13:00</item>
+        <item >14:30</item>
+        <item >15:30</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,41 @@
+{
+"TIMlayout": [
+{
+"id": "hazard",
+"position": {"x": 28.125,"y": 32.292},
+"size": {"width":56.25,"height":48.9585},
+"name": "`hazard`",
+"attributes": ["`ID`"],
+"functions": [ ]
+},
+{
+"id": "code",
+"position": {"x": 504.69,"y": 32.292},
+"size": {"width":78.1275,"height":48.9585},
+"name": "`code`",
+"attributes": ["`Package`"],
+"functions": [ ]
+},
+{
+"id": "fault",
+"position": {"x": 172.395,"y": 32.292},
+"size": {"width":157.29,"height":64.58324},
+"name": "`fault`",
+"attributes": [],
+"functions": [ "`fault`.`Severity`=high"]
+},
+{
+"id": "system_requirements",
+"position": {"x": 358.335,"y": 32.292},
+"size": {"width":139.5825,"height":48.9585},
+"name": "`system_requirements`",
+"attributes": [],
+"functions": [ ]
+}
+],
+"links": [{"source" : "system_requirements","target" : "code"},{"source" : "fault","target" : "system_requirements"},{"source" : "hazard","target" : "fault"}],
+"SQL": [ {"NQL":"show me hazard elements test",
+"SQL":"SELECT DISTINCT `code`.`Package` `hazard`.`ID` FROM `hazard`, `code`, `fault`, `tm_srscode`, `system_requirements`, `tm_faultsrs`, `tm_hazardfault` WHERE (1 AND `fault`.`Severity`=\"high\") AND (`tm_srscode`.`CodeID` = `code`.`ID` AND `tm_srscode`.`SrsID` = `system-requirements`.`ID` AND `tm_faultsrs`.`SrsID` = `system-requirements`.`ID` AND `tm_faultsrs`.`FaultID` = `fault`.`ID` AND `tm_hazardfault`.`FaultID` = `fault`.`ID` AND `tm_hazardfault`.`HazardID` = `hazard`.`ID`) ",
+"attributes" :["`ID`","`Package`" ], 
+"content": []
+ } ] }

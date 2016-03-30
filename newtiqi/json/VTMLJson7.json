@@ -1,0 +1,25 @@
+{
+"TIMlayout": [
+{
+"id": "test_case",
+"position": {"x": 127.08,"y": 40.104},
+"size": {"width":254.1675,"height":80.20499},
+"name": "`test_case`",
+"attributes": ["`ID`","`TestName`","`Steps`"],
+"functions": [ ]
+},
+{
+"id": "test_case_results",
+"position": {"x": 651.045,"y": 40.104},
+"size": {"width":718.7475,"height":64.58324},
+"name": "`test_case_results`",
+"attributes": [],
+"functions": [ "`test_case_results`.`Status`>1"]
+}
+],
+"links": [{"source" : "test_case","target" : "test_case_results"}],
+"SQL": [ {"NQL":"show me hazard elements test",
+"SQL":"SELECT DISTINCT `test_case`.`ID`, `test_case`.`TestName`, `test_case`.`Steps` FROM `test_case`, `test_case_results`, `tm_testcaseresults` WHERE (1 AND `test_case_results`.`Status`>\"1\") AND (`tm_testcaseresults`.`TestCaseID` = `test_case`.`ID` AND `tm_testcaseresults`.`TestCaseResults` = `test_case_results`.`ID`)",
+"attributes" :["`ID`","`TestName`","`Steps`" ], 
+"content": []
+ } ] }

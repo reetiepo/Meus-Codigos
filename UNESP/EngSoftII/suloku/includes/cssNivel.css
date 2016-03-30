@@ -1,0 +1,134 @@
+#experiment {
+  margin-top: 5%;
+
+  /* Safari & Chrome */
+  -webkit-perspective: 400px; 
+  -webkit-perspective-origin: 50% 50%;
+
+  /* Firefox */
+  -moz-perspective: 800px;
+  -moz-perspective-origin: 50% 50%;
+
+  /* Internet Explorer */ 
+  -ms-perspective: 800px;
+  -ms-perspective-origin: 50% 50%;
+
+  /* Opera */ 
+  -o-perspective: 800px; 
+  -o-perspective-origin: 50% 50%;
+}
+
+#cube {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+
+  /* Safari & Chrome */
+  -webkit-transition: -webkit-transform 2s linear;
+  -webkit-transform-style: preserve-3d;
+  
+  /* Firefox */
+  -moz-transition: -moz-transform 2s linear;
+  -moz-transform-style: preserve-3d;
+
+  /* Internet Explorer */ 
+  -ms-transition: -ms-transform 2s linear;
+  -ms-transform-style: preserve-3d;
+
+  /* Opera */ 
+  -o-transition: -o-transform 2s linear;
+  -o-transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 0.7);
+  font-size: 27px;
+  line-height: 1em;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#cube input[type="image"]{
+  height: 200px;
+  width: 200px;
+  border: 1px solid #FFF;
+  margin: -13% 0 0 -13%; /*superior, direita, inferior, esquerda*/;
+}
+
+#cube .one  {
+  /* Safari & Chrome */
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  /* Firefox */
+  -moz-transform: rotateX(90deg) translateZ(100px);
+  /* Internet Explorer */ 
+  -ms-transform: rotateX(90deg) translateZ(100px);
+  /* Opera */ 
+  -o-transform: rotateX(90deg) translateZ(100px);
+}
+
+#info{
+  vertical-align: middle;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+#cube .two {
+  /* Safari & Chrome */
+  -webkit-transform: translateZ(100px);
+  /* Firefox */
+  -moz-transform: translateZ(100px);
+  /* Internet Explorer */ 
+  -ms-transform: translateZ(100px);
+  /* Opera */ 
+  -o-transform: translateZ(100px);
+}
+
+#cube .three {
+  /* Safari & Chrome */
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  /* Firefox */
+  -moz-transform: rotateY(90deg) translateZ(100px);
+  /* Internet Explorer */ 
+  -ms-transform: rotateY(90deg) translateZ(100px);
+  /* Opera */ 
+  -o-transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube .four {
+  /* Safari & Chrome */
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+  /* Firefox */
+  -moz-transform: rotateY(180deg) translateZ(100px);
+  /* Internet Explorer */ 
+  -ms-transform: rotateY(180deg) translateZ(100px);
+  /* Opera */ 
+  -o-transform: rotateY(180deg) translateZ(100px);
+}
+
+#cube .five {
+  /* Safari & Chrome */
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  /* Firefox */
+  -moz-transform: rotateY(-90deg) translateZ(100px);
+  /* Internet Explorer */ 
+  -ms-transform: rotateY(-90deg) translateZ(100px);
+  /* Opera */ 
+  -o-transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube .six {
+  /* Safari & Chrome */
+  -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+  /* Firefox */
+  -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+  /* Internet Explorer */ 
+  -ms-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+  /* Opera */ 
+  -o-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+}

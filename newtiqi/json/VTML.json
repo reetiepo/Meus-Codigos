@@ -1,0 +1,54 @@
+{
+"TIMlayout": [
+{
+"id": "hazard",
+"position": {"x": 46.3545,"y": 32.292},
+"size": {"width":92.7075,"height":64.58324},
+"name": "`hazard`",
+"attributes": ["   `ID`","   `Hazard`"],
+"functions": [ ]
+},
+{
+"id": "fault",
+"position": {"x": 158.3325,"y": 32.292},
+"size": {"width":56.25,"height":48.9585},
+"name": "`fault`",
+"attributes": [],
+"functions": [ ]
+},
+{
+"id": "code",
+"position": {"x": 484.8975,"y": 32.292},
+"size": {"width":167.7075,"height":64.58324},
+"name": "`code`",
+"attributes": [],
+"functions": [ "   `code`.`Package`=P2"]
+},
+{
+"id": "system_requirements",
+"position": {"x": 293.7525,"y": 32.292},
+"size": {"width":139.5825,"height":48.9585},
+"name": "`system_requirements`",
+"attributes": [],
+"functions": [ ]
+}
+],
+"links": [{"source" : "hazard","target" : "fault"},{"source" : "fault","target" : "system_requirements"},{"source" : "system_requirements","target" : "code"}],
+"SQL": [ {"NQL":"show me hazard elements test",
+"SQL":"SELECT DISTINCT `hazard`.`ID`, `hazard`.`Hazard`, FROM `hazard`, `fault`, `code`, `tm_hazardfault`, `tm_faultsrs`, `system_requirements`, `tm_srscode` WHERE (1 AND `code`.`Package`=\"P2\") AND (`tm_hazardfault`.`HazardID` = `hazard`.`ID` AND `tm_hazardfault`.`FaultID` = `fault`.`ID` AND `tm_faultsrs`.`FaultID` = `fault`.`ID` AND `tm_faultsrs`.`SrsID` = `system-requirements`.`ID` AND `tm_srscode`.`SrsID` = `system-requirements`.`ID` AND `tm_srscode`.`CodeID` = `code`.`ID`) ",
+"attributes" :["ID","Hazard"], 
+"content": [
+	{
+		"ID": "H1",
+		"Hazard": "Prolonged exposure of infant to unsafe heat or code catastrophic"
+	},
+	{
+		"ID": "H2",
+		"Hazard": "Isolette system falls over dangerous"
+	},
+	{
+		"ID": "H3",	
+		"Hazard": "Testing hazard dangerous"
+	}
+]
+ } ] }

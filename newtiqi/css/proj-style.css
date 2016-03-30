@@ -1,0 +1,153 @@
+* {
+    box-sizing:             border-box;
+}
+
+body {
+    font:                   100% "Tahoma", "Arial", "sans-serif";
+    font-size:              14px;
+    margin:                 20px;
+    line-height:            26px;
+    background:             #e4ebe9 url(../images/pattern.png) repeat top left;
+}
+
+.vtmlSqlContainer, .vtmlSqlContainer div {
+    padding:                5px;
+    margin:                 35px auto 20px auto;
+}
+
+.vtmlSqlContainer {
+    display:                table;
+    width:                  100%;
+    height:                 auto;
+    min-height:             350px;
+}
+
+#vtml {
+    width:                  65%;
+    height:                 100%;
+    display:                table-cell;
+    border:                 thin solid silver; 
+    -moz-box-shadow:        1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow:     1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow:             1px 1px 2px rgba(0,0,0,0.2);
+    background-color:       white;
+}
+
+.margin {
+    width:                  1%;
+}
+
+#sql {
+    width:                  34%;
+    height:                 100%;
+    border:                 thin solid silver; 
+    -moz-box-shadow:        1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow:     1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow:             1px 1px 2px rgba(0,0,0,0.2);
+    background-color:       white;
+    display:                table-cell;
+    vertical-align:         top;
+}
+
+#container {
+    margin-top:             100px;
+}
+
+#nlq {
+    text-align:             center;
+    font-family:            'Coustard', sans-serif;
+    font-size:              300%;
+}
+
+.btn {
+    background-color:       #2a2b2c;
+    cursor:                 pointer;
+    color:                  white;
+    padding:                8px 15px;
+    margin:                 0px 5px;
+    -moz-box-shadow:        1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow:     1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow:             1px 1px 2px rgba(0,0,0,0.2);
+    font-family:            "Tahoma", "Arial", "sans-serif";
+    font-size:              14px;
+    vertical-align:         top;
+    border:                 none;
+}
+
+.btn:hover {
+  background:               #5f6366;
+  text-decoration:          none;
+}
+
+#buttons {
+    margin:                 0 auto;
+    text-align:             center;
+}
+
+#table
+{
+    width:                  100%;
+    display:                table;
+    border-top:             thin solid black;
+    border-right:           thin solid black;
+    border-radius:          4px;
+    margin:                 5px;
+    background-color:       white;
+}
+
+.heading
+{
+    display:                table-row;
+    font-weight:            bold;
+    text-align:             center;
+    color:                  white;
+
+    background:             -o-linear-gradient(bottom, #5392B3 5%, #166D9B 100%);    
+    background:             -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5392B3), color-stop(1, #166D9B) );
+    background:             -moz-linear-gradient( center top, #5392B3 5%, #166D9B 100% );
+    filter:progid:          DXImageTransform.Microsoft.gradient(startColorstr="#5392B3", endColorstr="#166D9B");  
+    background:             -o-linear-gradient(top,#5392B3,#166D9B);
+}
+
+.evenRow
+{
+    display:                table-row;
+    background-color:        white;
+}
+
+.oddRow {
+    display:                table-row;
+    background-color:       #dff2fa;
+}
+
+.cell
+{
+    display:                table-cell;
+    padding:                8px;
+    font-size:              12px;
+    border-left:            thin solid black;
+    border-bottom:          thin solid black;
+}
+
+.zoom {
+    cursor:                 pointer;
+    width:                  20px;
+    height:                 20px;
+}
+
+#zoom {
+    width:                  100%;
+    height:                 20px;
+    text-align:             center;
+    margin-bottom:          3px;
+}
+
+.tab {
+    margin-left:            40px;
+    color:                  black;
+}
+
+.keyword {
+    font-weight:            bold;
+    color:                  #006699;
+}
